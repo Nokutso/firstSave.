@@ -1,0 +1,74 @@
+
+.footer {
+  background-color: #111;
+  color: #ddd;
+}
+
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.footer-section h4 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 0.9rem;
+}
+
+.newsletter-form button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #e3a800;
+  color: #111;
+  font-weight: 600;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #cf9300;
+}
+
+.footer-bottom {
+  background-color: #000;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,86 @@
+/* Match Home.jsx layout */
+.results-container {
+  padding: 40px 0 40px  0;
+  background-color: #f6f6f7;
+  min-height: 100vh;
+  color: #111;
+}
+
+/* Match the heading style */
+.results-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Match Home.jsx product grid */
+.results-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+/* Style ProductCard to look like .product-card in Home */
+.results-grid > div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 240px;
+  padding: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.results-grid > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.results-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.results-grid h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #202223;
+}
+
+.results-grid p:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.results-grid p:nth-of-type(2) {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.results-grid a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.results-grid a:hover {
+  background-color: #333;
+}
+

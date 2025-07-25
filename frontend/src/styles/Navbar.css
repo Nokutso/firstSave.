@@ -1,0 +1,100 @@
+/* styles/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap; /* helps prevent mobile breaking */
+  border-bottom: 1px solid #ccc;
+}
+
+/* Left Section: logo + links */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Logo */
+.logo-link .logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Right Section: login/logout/user */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Links */
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #333;
+}
+
+/* User greeting */
+.nav-user {
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  .nav-link {
+    padding-left: 20px;
+  }
+
+  /* Only center the logo when center-logo class is applied */
+  .center-logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Optional: center image inside nav-left if needed */
+  .center-logo .logo-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
