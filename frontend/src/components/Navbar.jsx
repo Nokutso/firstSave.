@@ -13,12 +13,10 @@ const Navbar = () => {
   const hideLinksOn = ['/'];
   const shouldHideLinks = hideLinksOn.includes(location.pathname) && !user;
 
-const handleLogout = () => {
-  logout();
-  setTimeout(() => {
+  const handleLogout = () => {
+    logout();
     navigate('/');
-  }, 0); // Let logout finish before redirect
-};
+  };
 
   return (
     <nav className="navbar">
