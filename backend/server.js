@@ -10,13 +10,34 @@ dotenv.config();
 
 const app = express();
 
+const allowedOrigins = [
+    'http://localhost:5174',
+    'https://first-save.vercel.app'
+]
+
 // Middleware
 //app.use(cors());
+
+
 // ✅ Recommended CORS setup
-app.use(cors({
+/*app.use(cors({
   origin: 'http://localhost:5174',  // your React app's address
   credentials: true                 // allow cookies or auth headers if needed
 }));
+*/ 
+
+const corsOptions = {
+     origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Connect to DB
