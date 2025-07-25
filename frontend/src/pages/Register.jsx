@@ -14,7 +14,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:9077/api/auth/register', {
+      const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/register`, {
         name,
         email,
         password,

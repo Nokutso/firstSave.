@@ -16,7 +16,7 @@ const SearchResults = () => {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/api/search`, {
+        const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/search`, {
           params: { q: keyword }, // 🔁 use `q` instead of `keyword`
         });
         setProducts(data);

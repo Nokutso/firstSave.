@@ -16,7 +16,7 @@ const Login = () => {
     setError(null);
 
     try {
-      const { data } = await axios.post('http://localhost:9077/api/auth/login', {
+      const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/auth/login`, {
         email,
         password,
       });
