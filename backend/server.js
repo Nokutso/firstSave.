@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 const allowedOrigins = [
-    'http://localhost:5175',
+    'http://localhost:5176',
     'https://first-save.vercel.app'
 ]
 

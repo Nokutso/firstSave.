@@ -1,19 +1,48 @@
-# FirstSave
+# FirstSave 🛒
 
-## Description
+FirstSave is an intelligent price comparison platform that helps users find the best deals across major South African retailers like Checkers, Pick n Pay, and Clicks.
 
-FirstSave is a smart price comparison web app designed to help shoppers save money by comparing prices across multiple South African retailers including Checkers, Pick n Pay, and Clicks. Instead of browsing multiple stores, users get instant access to the best deals, helping them make informed purchasing decisions quickly and easily. FirstSave leverages real-time product data, offering a seamless, user-friendly shopping assistant experience.
+## 🚀 Features
 
----
+- 🔍 Search for products by name or keyword
+- 💾 Save your favorite items
+- 🏪 Compare prices across multiple stores
+- 🔐 Secure user authentication
+- 📦 Real-time updates
 
-## Setup Instructions
+## 🌐 Website
 
-### Prerequisites
-- Node.js (version 16+ recommended)
-- npm or pnpm
-- MongoDB Atlas account (or local MongoDB instance)
+👉 [Visit FirstSave](https://first-save.vercel.app/)
 
-### Backend Setup
-1. Navigate to the backend directory:
-   ```bash
-    cd backend 
+## 📸 Screenshot
+
+![FirstSave Screenshot](./other/Screenshot%202025-08-25%20at%2017.25.54.png)
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, CSS
+- **Backend:** Node.js, Express, MongoDB
+- **Auth:** JWT
+- **Deployment:** Render / Vercel 
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/firstsave.git
+cd firstsave
+
+# Install dependencies
+pnpm install
+
+# Create a .env file and add your secrets
+touch .env
+
+# Run the server
+pnpm run dev
+```
+
+## 🙋‍♀️ Author
+
+**Sharon Jack**  
+📧 Email: sharonanatso@gmail.com  
